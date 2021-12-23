@@ -15,6 +15,7 @@ repositories {
     maven(url = "https://oss.sonatype.org/content/repositories/snapshots/") {
         name = "sonatype-oss-snapshots"
     }
+    maven("https://maven.enginehub.org/repo/")
     maven("https://repo.projecttl.net/repository/maven-public/")
 }
 
@@ -22,11 +23,12 @@ dependencies {
     compileOnly(kotlin("stdlib"))
     compileOnly("net.kyori:adventure-api:4.9.3")
     compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
+    compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.7-SNAPSHOT")
 
     //project_TL
 
     //MineStar
-    implementation("kr.kro.minestar:Utility-API:1.5.4")
+    implementation("kr.kro.minestar:Utility-API:1.5.5")
 }
 
 tasks {
